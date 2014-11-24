@@ -9,7 +9,7 @@
     {% if embed.author_name %}
         <p>Author: {{ embed.author_name }}</p>
     {% endif %}
-    {% if embed.poster_image %}
+    {% if embed.poster_image.all %}
         {% for poster in embed.poster_image.all %}
             {% if forloop.first %}
                 {% image poster.image width-500 %}
