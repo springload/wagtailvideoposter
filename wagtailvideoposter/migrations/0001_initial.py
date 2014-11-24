@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('wagtailimages', '0004_make_focal_point_key_not_nullable'),
-        ('wagtailembeds', '0002_add_image_field'),
+        ('wagtailembeds', '0001_initial'),
     ]
 
     operations = [
