@@ -118,7 +118,7 @@ def poster_image_chosen(request, image_id, embed_id):
     embed_image.save()
     return render_modal_workflow(
         request, None, 'wagtailimages/chooser/poster_image_chosen.js',
-        {'image_json': image_json}
+        {'image_json': image_json, 'posterimage_id': embed_image.id}
     )
 
 
@@ -154,7 +154,7 @@ def poster_image_upload(request, embed_id):
                 image_json = get_image_json(image)
                 return render_modal_workflow(
                     request, None, 'wagtailimages/chooser/poster_image_chosen.js',
-                    {'image_json': image_json}
+                    {'image_json': image_json, 'posterimage_id': embed_image.id}
                 )
     else:
         form = ImageForm()

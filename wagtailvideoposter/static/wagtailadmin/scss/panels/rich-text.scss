@@ -106,6 +106,34 @@
         }
     }
 
+    /* Poster image remove controls on embedded blocks with contenteditable="false" and data-type="video" */
+    .rich-text-delete-editable {
+        position: relative;
+        a.posterimage-delete-control {
+            position: absolute;
+            right: 40px;
+            cursor: pointer;
+            display: none;
+
+            &:before{
+                background-color:rgba(255,255,255,0.8);
+            }
+            &:hover:before{
+                background-color:white;
+            }
+        }
+    }
+    &.inEditMode {
+
+        .rich-text-delete-editable a.posterimage-delete-control {
+            display: block;
+        }
+
+        .rich-text-delete-editable a.posterimage-delete-control i {
+            display: block;
+        }
+    }
+
     /* Set some reasonable default heading styles. These can be overridden in site-specific custom CSS
     to make them better reflect their appearance on the front-end (however, it's arguably better for editors
     NOT to be thinking about a specific visual appearance when they choose heading levels...) */

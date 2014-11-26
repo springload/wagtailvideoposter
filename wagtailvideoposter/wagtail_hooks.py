@@ -31,8 +31,9 @@ def editor_js():
             <script>
                 window.removersUrls = [];
                 window.removersUrls.embedsRemover = '{0}';
+                window.removersUrls.posterimageRemover = '{1}';
             </script>
-        """, reverse('posterimage_remove_embed')
+        """, reverse('posterimage_remove_embed'), reverse('posterimage_remove_poster')
     )
 
     return js_includes

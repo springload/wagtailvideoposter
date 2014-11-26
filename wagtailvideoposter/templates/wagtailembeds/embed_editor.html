@@ -1,5 +1,5 @@
 {% load wagtailimages_tags %}
-<div data-type="{{ embed.type }}" data-posterimage="{{ embed.image_id }}" id="{{ embed.id }}" class="embed-placeholder" contenteditable="false" data-embedtype="media" data-url="{{ embed.url }}">
+<div id="{{ embed.id }}" data-type="{{ embed.type }}" {% if embed.poster_image.all %}{% for poster in embed.poster_image.all %}{% if forloop.first %}data-posterimage="{{ poster.id }}"{% endif %}{% endfor %}{% endif %} class="embed-placeholder" contenteditable="false" data-embedtype="media" data-url="{{ embed.url }}">
 
     <h3>{{ embed.title }}</h3>
     <p>URL: {{ embed.url }}</p>
