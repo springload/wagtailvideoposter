@@ -1,9 +1,9 @@
 <div style="padding-bottom: {{ ratio }};" class="responsive-object">
     {{ embed.html|safe }}
-    <!-- TODO: Laura could arrange the poster image and add some JS (maybe Springload's custom Video lib?¿) -->
-    {% if embed.poster_image %}
+    {% if embed.poster_image.all %}
         {% for poster in embed.poster_image.all %}
             {% if forloop.first %}
+                {% load wagtailimages_tags %}
                 {% image poster.image width-500 %}
             {% endif %}
         {% endfor %}
