@@ -1,15 +1,18 @@
-wagtailvideoposter
-==================
+# wagtailvideoposter
 
-Poster images for Wagtail Video Embeds
+> Poster images for Wagtail Video Embeds
 
-# Quickstart
+*Check out [Awesome Wagtail](https://github.com/springload/awesome-wagtail) for more awesome packages and resources from the Wagtail community.*
 
-``` $ pip install wagtailvideoposter [GITHUB SSH URI]```
+## Quickstart
 
-add wagtailvideoposter to your settings.py in the INSTALLED_APPS section:
-
+```sh
+pip install wagtailvideoposter [GITHUB SSH URI]
 ```
+
+Add wagtailvideoposter to your settings.py in the INSTALLED_APPS section:
+
+```python
 ...
     'modelcluster',
     'core',
@@ -20,7 +23,7 @@ add wagtailvideoposter to your settings.py in the INSTALLED_APPS section:
 
 Run migrations:
 
-```
+```sh
 ./manage.py migrate wagtailvideoposter
 
 ```
