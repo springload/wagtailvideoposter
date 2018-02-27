@@ -1,4 +1,4 @@
-# wagtailvideoposter
+# Wagtail Video Poster
 
 > Poster images for Wagtail Video Embeds
 
@@ -7,7 +7,7 @@
 ## Quickstart
 
 ```sh
-pip install wagtailvideoposter [GITHUB SSH URI]
+pip install git+https://github.com/springload/wagtailvideoposter.git
 ```
 
 Add wagtailvideoposter to your settings.py in the INSTALLED_APPS section:
