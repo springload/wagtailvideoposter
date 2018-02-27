@@ -1,3 +1,5 @@
+**!! WARNING: This repo isn't maintained anymore !!**
+
 # Wagtail Video Poster
 
 > Poster images for Wagtail Video Embeds
